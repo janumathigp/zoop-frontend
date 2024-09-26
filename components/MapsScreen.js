@@ -44,7 +44,7 @@ export default function MapsScreen() {
     }, [travelMode]); // Fetch route when travel mode changes
 
     const fetchRoute = async (origin, destination, mode = 'driving') => {
-        const GOOGLE_MAPS_APIKEY = 'AIzaSyCtgX-LWgL3naVNGzBC8G-d9xcoedsRlTU'; // Replace with your API key
+        const GOOGLE_MAPS_APIKEY = " ";
 
         const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin.latitude},${origin.longitude}&destination=${destination.latitude},${destination.longitude}&mode=${mode}&key=${GOOGLE_MAPS_APIKEY}`;
 
